@@ -1,5 +1,4 @@
 # Ruby program to illustrate 'while' loop
- 
 # variable x
 x = 4
  
