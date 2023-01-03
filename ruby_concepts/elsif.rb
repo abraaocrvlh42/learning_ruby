@@ -7,3 +7,5 @@ elsif day == 'Holiday'
 else
   lunch = 'Normal'
 end
+
+puts "Lunch is #{lunch} today !"
