@@ -1,3 +1,5 @@
+# If in Ruby
+
 day = 'Sunday'
 
 if day == 'Sunday'
