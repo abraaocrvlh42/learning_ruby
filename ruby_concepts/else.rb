@@ -1,4 +1,4 @@
-#
+# Else in Ruby
 
 day = 'Sunday'
 
