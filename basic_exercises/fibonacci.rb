@@ -1,5 +1,4 @@
-=begin 
-Ruby program to print Fibonacci series with recursion
+
 
 def fib(n)
 	if (n<=2)
