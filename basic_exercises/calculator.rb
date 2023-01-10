@@ -8,8 +8,10 @@ loop do
   puts "3 - Multiplication"
   puts "4 - Division"
   puts "5 - Module"
+  puts "0 - Exit"
+
   print 'Option: '
-  
+
   option = gets.chomp.to_i
 
   if option == 1
@@ -70,5 +72,11 @@ loop do
     mod = num1 ** num2
 
     puts "The Module is: #{mod}"
+  elsif
+    option == 0
+    break
+  else
+    puts "Invalid option. Enter 1 for Addition, 2 for Subtraction, 3 for Multiplication, 4 for Division, 5 for Punctuation, and 0 to exit."
   end
+  system "clear"
 end
