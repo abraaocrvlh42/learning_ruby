@@ -1,0 +1,5 @@
+result = ''
+
+loop do
+  
+end
