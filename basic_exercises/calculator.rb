@@ -1,8 +1,6 @@
-result = ' '
+result = ''
 
 loop do
-  puts "result"
-
   puts "1 - Addition"
   puts "2 - Subtraction"
   puts "3 - Multiplication"
@@ -78,5 +76,5 @@ loop do
   else
     puts "Invalid option. Enter 1 for Addition, 2 for Subtraction, 3 for Multiplication, 4 for Division, 5 for Punctuation, and 0 to exit."
   end
-  system "clear"
+  #system "clear"
 end
