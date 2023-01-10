@@ -8,7 +8,8 @@ loop do
   puts "3 - Multiplication"
   puts "4 - Division"
   puts "5 - Module"
-
+  print 'Option: '
+  
   option = gets.chomp.to_i
 
   if option == 1
