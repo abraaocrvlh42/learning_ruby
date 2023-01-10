@@ -1,7 +1,7 @@
-result = ''
+result = ' '
 
 loop do
-  result = ''
+  puts "result"
 
   puts "1 - Addition"
   puts "2 - Subtraction"
@@ -23,7 +23,7 @@ loop do
 
     addition = num1 + num2
 
-    puts "The Addition is: #{add}"
+    puts "The Addition is: #{addition}"
   end
 
   if option == 2
