@@ -71,13 +71,14 @@ def delete_contacts
 
   @schecule.each do |contacts|
     if contacts[:name].downcase.include?(name.downcase)
-      indice = @schecule.index(contact)
+      indice = @schecule.index(contacts)
       @schecule.delete_at(indice)
       break
     end
   end
 end
 
+# Optional contact book menu
 loop do
   puts "1 - Contacts\n2 - Add Contacts\n3 - View Contacts\n4 - Edit Contatcs\n5 - Delete Contacs\n0 - Exit"
 
