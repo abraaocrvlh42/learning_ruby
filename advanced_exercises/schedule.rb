@@ -8,6 +8,11 @@
   {name: 'Juca', phone_number: '964821005'}
 ]
 
+# Method to see the complete list of contacts saved in the phonebook
+def all_contacts
+
+end
+
 loop do
   puts "1 - Contacts\n2 - Add Contacts\n3 - View Contacts\n4 - Edit Contatcs\n5 - Delet Contacs\n0 - Exit"
 
