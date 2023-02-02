@@ -47,14 +47,29 @@ def edit_contacts
 
   @schecule.each do |contacts|
     if contacts[:name].downcase.include?(name.downcase)
-      
+      # validation to edit or not the contact name
+      print "Contact name to edit (if you don't want to edit, press 'Enter'): "
+      save_name = contact[:name]
+
+      contact[:name] = gets.chomp
+      contact[:name] = contact[:name].empty? ? save_name : contact[:name]
+
+      # validation to edit or not the phone number
+      print "Contact phone number to edit (if you don't want to edit, press 'Enter'): "
+      save_phone_number = contact[:phone_number]
+
+      contact[:phone_number] = gets.chomp
+      contact[:phone_number] = contact[:phone_number].empty? ? save_phone_number : contact[:phone_number]
     end
   end
 end
 
 # Method to delete a contact
 def delete_contacts
+  print 'Enter the name of the contact you want to delete: '
+  name = gets.chomp
 
+  
 end
 
 loop do
