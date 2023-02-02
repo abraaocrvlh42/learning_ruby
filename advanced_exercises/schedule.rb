@@ -69,7 +69,13 @@ def delete_contacts
   print 'Enter the name of the contact you want to delete: '
   name = gets.chomp
 
-  
+  @schecule.each do |contacts|
+    if contacts[:name].downcase.include?(name.downcase)
+      indice = @schecule.index(contact)
+      @schecule.delete_at(indice)
+      break
+    end
+  end
 end
 
 loop do
