@@ -13,22 +13,22 @@ def all_contacts
 
 end
 
-
+# Method for adding new contacts
 def add_contacts
 
 end
 
-
+# Method to view a specific contact
 def view_contacts
 
 end
 
-
+# Method to edit a contact
 def edit_contacts
 
 end
 
-
+# Method to delete a contact
 def delete_contacts
 
 end
