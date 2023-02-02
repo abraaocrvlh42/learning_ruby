@@ -44,6 +44,12 @@ end
 def edit_contacts
   print 'Enter the name of the contact you want to edit: '
   name = gets.chomp
+
+  @schecule.each do |contacts|
+    if contacts[:name].downcase.include?(name.downcase)
+      
+    end
+  end
 end
 
 # Method to delete a contact
