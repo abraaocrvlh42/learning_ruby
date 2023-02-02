@@ -42,7 +42,8 @@ end
 
 # Method to edit a contact
 def edit_contacts
-
+  print 'Enter the name of the contact you want to edit: '
+  name = gets.chomp
 end
 
 # Method to delete a contact
@@ -51,7 +52,7 @@ def delete_contacts
 end
 
 loop do
-  puts "1 - Contacts\n2 - Add Contacts\n3 - View Contacts\n4 - Edit Contatcs\n5 - Delet Contacs\n0 - Exit"
+  puts "1 - Contacts\n2 - Add Contacts\n3 - View Contacts\n4 - Edit Contatcs\n5 - Delete Contacs\n0 - Exit"
 
   print 'Option: '
 
