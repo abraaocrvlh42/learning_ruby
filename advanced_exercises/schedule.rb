@@ -18,12 +18,19 @@ end
 
 # Method for adding new contacts
 def add_contacts
-  
+  print 'Add a contact: '
+  name = gets.chomp
+
+  print 'Phone number: '
+  phone_number = gets.chomp.to_i
+
+  @schecule << {name: name, phone_number: phone_number}
 end
 
 # Method to view a specific contact
 def view_contacts
-
+  @schecule.each do |contacts|
+  end
 end
 
 # Method to edit a contact
