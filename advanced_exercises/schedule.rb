@@ -13,6 +13,26 @@ def all_contacts
 
 end
 
+
+def add_contacts
+
+end
+
+
+def view_contacts
+
+end
+
+
+def edit_contacts
+
+end
+
+
+def delete_contacts
+
+end
+
 loop do
   puts "1 - Contacts\n2 - Add Contacts\n3 - View Contacts\n4 - Edit Contatcs\n5 - Delet Contacs\n0 - Exit"
 
