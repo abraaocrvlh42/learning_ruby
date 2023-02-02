@@ -29,7 +29,14 @@ end
 
 # Method to view a specific contact
 def view_contacts
+  print 'Enter the name of the contact you want to view: '
+  name = gets.chomp
+
   @schecule.each do |contacts|
+    if contacts[:name].downcase.include?(name.downcase)
+      puts "| #{contacts[:name]} | #{contacts[:phone_number]} |"
+      puts "--------------------- "
+    end
   end
 end
 
