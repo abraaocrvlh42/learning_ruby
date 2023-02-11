@@ -7,3 +7,7 @@ class Computer
     'shutdown computer'
   end
 end
+
+computer = Computer.new
+
+puts computer.turn_on
