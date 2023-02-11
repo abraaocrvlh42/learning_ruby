@@ -1,7 +1,9 @@
 class Computer
-  def
+  def turn_on
+    'turn on computer'
   end
 
-  def
+  def shutdown
+    'shutdown computer'
   end
 end
