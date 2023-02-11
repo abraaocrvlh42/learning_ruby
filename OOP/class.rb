@@ -11,6 +11,7 @@ class Student
   end
 end
 
+
 stud = Student.new
 
 stud.name('Abraão')
