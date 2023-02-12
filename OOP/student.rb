@@ -1,19 +1,23 @@
-class Student
-  @name
-  @age
-
-  def change_name(name)
-    @name = name
+class Aluno
+  attr_accessor :nome, :disciplina
+  def initialize(nome, disciplina)
+    @nome = nome
+    @disciplina = disciplina
+    @notas = []
   end
 
-  def show_name
-    @name
+  def adiciona_nota(nota)
+    @notas << nota
+  end
+
+  def media
+    media = 5 + 7
+    return media / 2
   end
 end
 
+andre = Aluno.new('André', 'Matemática')
+luana = Aluno.new('Luana', 'Filosofia')
 
-stud = Student.new
-
-stud.name('Abraão')
-
-puts stud.show_name
+andre.adiciona_nota(5)
+andre.adiciona_nota(7)
