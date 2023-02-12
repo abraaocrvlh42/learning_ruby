@@ -1,5 +1,5 @@
 class Animal
-  def to_jump
+  def tojump
     puts 'jumped'
   end
 
@@ -7,3 +7,13 @@ class Animal
     puts 'zZzZzZ'
   end
 end
+
+class Dogs < Animal
+  def bark
+    puts 'au au au'
+  end
+end
+
+dog = Dog.new
+dog.tojump
+dog.sleep
