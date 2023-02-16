@@ -19,6 +19,5 @@ end
 andre = Aluno.new('André', 'Matemática')
 luana = Aluno.new('Luana', 'Filosofia')
 
-
 andre.adiciona_nota(5)
 andre.adiciona_nota(7)
