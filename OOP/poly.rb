@@ -5,5 +5,8 @@ class Instrument
 end
 
 class Keyboard < Instrument
-  
+
+end
+
+class Pencil < Instrument
 end
