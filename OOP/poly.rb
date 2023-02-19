@@ -4,3 +4,6 @@ class Instrument
   end
 end
 
+class Keyboard < Instrument
+  
+end
