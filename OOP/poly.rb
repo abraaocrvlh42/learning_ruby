@@ -1,6 +1,6 @@
 class Instrument
   def to_write
-    'Writing'
+    puts "Writing"
   end
 end
 
