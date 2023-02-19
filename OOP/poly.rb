@@ -9,4 +9,7 @@ class Keyboard < Instrument
 end
 
 class Pencil < Instrument
+  def Writing
+    puts "Writing in pencil"
+  end
 end
