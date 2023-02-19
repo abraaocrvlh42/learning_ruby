@@ -19,3 +19,11 @@ class Pen < Instrument
     puts "Writing with pen"
   end
 end
+
+keyboard = Keyboard.new
+pencil = Pencil.new
+pen = Pen.new
+
+keyboard.writing
+pencil.writing
+pen.writing
