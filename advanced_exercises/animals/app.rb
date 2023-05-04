@@ -1,4 +1,4 @@
-# Import "animals.r"
+# Import "animals.rb"
 require_relative 'animals.rb'
 
 animal = Animal.new 
