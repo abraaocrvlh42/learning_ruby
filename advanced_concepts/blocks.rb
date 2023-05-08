@@ -1,3 +1,4 @@
+# Ruby blocks are little anonymous functions that can be passed into methods.
 # 1 - Example
 5.times {
   puts "Exec block"
