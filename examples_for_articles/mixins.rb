@@ -1,26 +1,19 @@
-# Example with a mixin that adds attributes and methods:
-module Identification
-  attr_accessor :name, :age
-
-  def present
-    puts "Hello, my name is #{name} and I'm #{age} years old."
+module Greeting
+  def greeting
+    puts "Hello, welcome!"
   end
 end
 
 class Person
-  include Identification
+  include Greeting
 end
 
 class Animal
-  include Identification
+  include Greeting
 end
 
 person = Person.new
-person.name = "John"
-person.age = 30
-person.present # Output: Hello, my name is João and I'm 30 years old.
+person.greeting # Output: Hello, welcome!
 
 animal = Animal.new
-animal.name = "Rex"
-animal.age = 5
-animal.present # Output: Hi, my name is Rex and I'm 5 years old.
+animal.greeting # Output: Hello, welcome!
