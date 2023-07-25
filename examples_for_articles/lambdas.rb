@@ -6,8 +6,6 @@ multiply_lambda = lambda { |x, y| x * y }
 result = multiply_lambda.call(4, 6)
 puts result # Output: 24
 
-#
-#
-#
+# Another Examples:
 
 # Using literal syntax
