@@ -37,6 +37,7 @@ thread.join
 
 require 'concurrent'
 
+# Example of how to create a Thread Pooling
 # Creates a thread pool with 4 threads
 pool = Concurrent::ThreadPoolExecutor.new(max_threads: 4)
 
