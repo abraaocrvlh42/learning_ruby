@@ -1,36 +1,39 @@
-# thread = Thread.new do
-#   5.times do |i|
-#     puts "Thread: #{i}"
-#     sleep(1)
-#   end
-# end
+# Example of how to create a Thread
+thread = Thread.new do
+  5.times do |i|
+    puts "Thread: #{i}"
+    sleep(1)
+  end
+end
 
-# thread.join  # Aguarda a thread terminar antes de continuar
-# puts "Thread principal"
+thread.join  # Aguarda a thread terminar antes de continuar
+puts "Main Thread"
 
-# counter = 0
-# mutex = Mutex.new
+# Example of how to share Variables between Threads
 
-# threads = []
+counter = 0
+mutex = Mutex.new
 
-# 10.times do
-#   threads << Thread.new do
-#     mutex.synchronize do
-#       1000.times do
-#         counter += 1
-#       end
-#     end
-#   end
-# end
+threads = []
 
-# threads.each(&:join)
-# puts "Counter: #{counter}"
+10.times do
+  threads << Thread.new do
+    mutex.synchronize do
+      1000.times do
+        counter += 1
+      end
+    end
+  end
+end
 
-# thread = Thread.new("Hello", "World") do |arg1, arg2|
-#   puts "#{arg1}, #{arg2}!"
-# end
+threads.each(&:join)
+puts "Counter: #{counter}"
 
-# thread.join
+thread = Thread.new("Hello", "World") do |arg1, arg2|
+  puts "#{arg1}, #{arg2}!"
+end
+
+thread.join
 
 require 'concurrent'
 
