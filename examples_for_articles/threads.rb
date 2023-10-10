@@ -6,7 +6,7 @@ thread = Thread.new do
   end
 end
 
-thread.join  # Aguarda a thread terminar antes de continuar
+thread.join  # Wait for the thread to finish before continuing
 puts "Main Thread"
 
 # Example of how to share Variables between Threads
