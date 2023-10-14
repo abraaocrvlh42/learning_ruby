@@ -24,7 +24,7 @@
 # car = Car.new("Tesla")
 # car.destroy
 
-
+# Namespace example
 module MyNamespace
   class MyClass
     def self.greet
