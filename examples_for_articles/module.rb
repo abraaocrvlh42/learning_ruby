@@ -1,4 +1,4 @@
-# Mixins
+# Mixins examples
 module Destructible
   def destroy
     puts "#{self.class} has been destroyed!"
