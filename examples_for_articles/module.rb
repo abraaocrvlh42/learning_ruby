@@ -1,28 +1,29 @@
-# module Destructible
-#   def destroy
-#     puts "#{self.class} has been destroyed!"
-#   end
-# end
 
-# class Building
-#   include Destructible
-#   def initialize(name)
-#     @name = name
-#   end
-# end
+module Destructible
+  def destroy
+    puts "#{self.class} has been destroyed!"
+  end
+end
 
-# class Car
-#   include Destructible
-#   def initialize(brand)
-#     @brand = brand
-#   end
-# end
+class Building
+  include Destructible
+  def initialize(name)
+    @name = name
+  end
+end
 
-# house = Building.new("Mansion")
-# house.destroy
+class Car
+  include Destructible
+  def initialize(brand)
+    @brand = brand
+  end
+end
 
-# car = Car.new("Tesla")
-# car.destroy
+house = Building.new("Mansion")
+house.destroy
+
+car = Car.new("Tesla")
+car.destroy
 
 # Namespace example
 module MyNamespace
