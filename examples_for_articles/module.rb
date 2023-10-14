@@ -25,16 +25,17 @@
 # car.destroy
 
 
-# module MyNamespace
-#   class MyClass
-#     def self.greet
-#       puts "Hello from MyNamespace::MyClass!"
-#     end
-#   end
-# end
+module MyNamespace
+  class MyClass
+    def self.greet
+      puts "Hello from MyNamespace::MyClass!"
+    end
+  end
+end
 
-# MyNamespace::MyClass.greet
+MyNamespace::MyClass.greet
 
+# Examples for Math
 module MathHelpers
   def square_root(x)
     Math.sqrt(x)
